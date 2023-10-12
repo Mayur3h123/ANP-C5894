@@ -1,0 +1,44 @@
+<!-- Java Script
+    Q1) write a java script program to check age is above 18 for voting. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Verify</title>
+</head>
+
+<body>
+    <h2>Verify Your Age For Voting</h2>
+
+    <form>
+        <label for="Age">Enter your Age</label><br>
+        <input type="text" id="Age" name="Age"><br><br>
+        <input type="button" value="Check" onclick="myfunction()">
+
+    </form>
+
+    <p id="demo"></p>
+
+    <script>
+        function myfunction() {
+
+            var age = document.getElementById("Age").value;
+            let message;
+
+            if (age < 18) {
+                message = "You Are Not Eligible For Voting";
+
+            }
+
+            else {
+                message = "You Are Eligible For Voting";
+            }
+            document.getElementById("demo").innerHTML = message;
+        }
+    </script>
+
+</body>
+
+</html>

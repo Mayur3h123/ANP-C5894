@@ -1,0 +1,72 @@
+<!-- HTML
+    Q5)write a html program to create web page  which implements  inline, internal, external CSS. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web</title>
+    <link rel="stylesheet" href="CreateWeb.css">
+
+    <style>
+        #P1 {
+            border: 2px;
+            color: rgb(0, 21, 255);
+            font-size: 20px;
+            line-height: 1.6;
+            text-align: justify;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        h2 {
+            text-align: center;
+            font-family: 'Pacifico', cursive;
+            color: #FF6347;
+            font-size: 36px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <h2 style="color: rgb(0, 30, 255); ">Inline CSS</h2>
+    <p style="color: rgb(255, 0, 0);background-size: cover;">
+        Inline CSS allows you to apply a unique style to one HTML element at a time. You can assign the Inline CSS to
+        aspecific HTML element by using the style attribute with any CSS properties defined within it.
+
+    </p>
+
+    <p style="color: rgb(0, 60, 255);">
+        You must be thinking this is the best way to add CSS on the website but I will let you know that it is not the
+        best method to style your HTML. If you add too much Inline CSS, then your HTML will become too messy to
+        understand for you.
+    </p>
+
+    <h2 style="color: rgb(147, 240, 40);">Internal CSS</h2>
+    <p id="P1">
+        Internal CSS is used to define a style tag for a single HTML page. It is defined in the head section within a
+        style element. One important point to note here is, Inline CSS is given more priority than Internal CSS.
+    </p>
+
+    <h2>External CSS</h2>
+    <p class="P2">
+        External CSS is mostly used when you want to make changes on multiple pages. It is an ideal condition because it
+        facilitates you to change the look of the entire website by changing just one file. We will add the stylesheet
+        in the head section using link tag.
+    </p>
+    <p id="p3">
+        The point here to remember is that whether it is the Internal CSS or the External CSS, whichever is
+        written after, gets the priority. But if you want that first one should get priority, so you can add important
+        after it. The result will be, it will get the most priority of all.
+
+        So I hope you must have understood all the three types of CSS used to style our website. From the next
+        tutorials, we will see some more interesting properties about CSS. Till then stay with the tutorials and keep
+        practicing whatever is taught till now.</p>
+</body>
+
+</html>

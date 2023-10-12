@@ -1,0 +1,56 @@
+<!-- Java Script
+    Q2) write a java script program to implement switch case to check marks and assign a grade. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Checker</title>
+</head>
+
+<body>
+    <h3><b> Welcome to Grade Checker</b></h3>
+
+    <form>
+
+        <label for="Grade">Enter a Grade:</label><br>
+        <input type="text" id="Grade" name="Grade"><br>
+        <p id="demo"></p>
+        <input type="button" value="Button" onclick="myFunction1()">
+    </form>
+    
+
+    <script>
+        function myFunction1() {
+            var marks = document.getElementById("Grade").value;
+            let grade;
+
+            switch (true) {
+                case marks >= 90:
+                    grade = 'O';
+                    break;
+                case marks >= 80:
+                    grade = 'A';
+                    break;
+                case marks >= 70:
+                    grade = 'B';
+                    break;
+                case marks >= 60:
+                    grade = 'C';
+                    break;
+                case marks >= 50:
+                    grade = 'D';
+                    break;
+                default:
+                    grade = 'F';
+                    break;
+            }
+            document.getElementById("demo").innerHTML = grade;
+
+        }
+    </script>
+
+</body>
+
+</html>
