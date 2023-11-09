@@ -15,7 +15,7 @@ class Encapsulation
 	}
 	public void setAge(int age) {
 		this.age = age;
-	}
+}
 	
 
 	
@@ -28,7 +28,7 @@ class Main
 		//Creating instance of class Encapsulation
 		Encapsulation e=new Encapsulation();
 		
-		//Setting values
+		//Setting Values
 		e.setName("Mayuresh");
 		e.setAge(24);
 	
